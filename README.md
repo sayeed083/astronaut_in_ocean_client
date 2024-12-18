@@ -26,4 +26,7 @@
 
     https://preview.themeforest.net/item/astron-astronomy-elementor-template-kit/full_screen_preview/44113556?_ga=2.46340965.351755368.1734325116-518884433.1682954473
 
+
+
+## Short Command for quic setup in componenst RSC
     

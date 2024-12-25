@@ -3,7 +3,7 @@ import { FaMoon, FaSun } from 'react-icons/fa';
 
 const VisionAndMission = () => {
     return (
-        <div className='my-10 flex items-center justify-between'>
+        <div className='my-10 flex items-center gap-20 justify-between text-white'>
             <div>
                 <img src="https://i.postimg.cc/htvtdnkB/Untitled-design-removebg-preview.png" alt="" />
             </div>
@@ -12,7 +12,7 @@ const VisionAndMission = () => {
 
                 {/* ---------------1st Part Start---------------------- */}
 
-                <div className="flex items-center text-2xl capitalize gap-5 text-cyan-400">
+                <div className="flex items-center text-xl capitalize gap-5 text-cyan-400">
                     <p>Who we are</p>
                     <hr className="border-t-[2px] border-cyan-400 w-[200px]" />
                 </div>
@@ -22,10 +22,10 @@ const VisionAndMission = () => {
                 {/* ---------------2nd Part Start---------------------- */}
 
                 <div>
-                    <h2 className='text-5xl'>We Are The Astronomy</h2>
-                    <p className='text-cyan-400 my-2 text-5xl'>Community</p>
+                    <h2 className='text-4xl'>We Are The Astronomy</h2>
+                    <p className='text-cyan-400 my-2 text-4xl'>Community</p>
                     <hr className="border-t-[2px] border-cyan-400 mt-4 w-[100px]" />
-                    <p className='my-4 text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aliquam possimus <br /> blanditiis quisquam ducimus, minus,  repudiandae  molestiae impedit soluta quae <br /> commodi quas </p>
+                    <p className='my-4 text-lg'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aliquam possimus <br /> blanditiis quisquam ducimus, minus,  repudiandae  molestiae impedit soluta quae <br /> commodi quas </p>
                 </div>
                 {/* ---------------2nd Part Ends---------------------- */}
 
@@ -37,11 +37,11 @@ const VisionAndMission = () => {
                     {/* No 1 Start */}
                     <div>
                         <div className='flex items-center gap-3'>
-                            <FaMoon className="w-[50px] h-[50px] rounded-full bg-cyan-400 text-white p-3" />
-                            <p className='text-xl font-semibold'>Vision</p>
+                            <FaMoon className="w-[45px] h-[45px] rounded-full bg-cyan-400 text-white p-3" />
+                            <p className='text-lg font-semibold'>Vision</p>
                         </div>
 
-                        <p className='ms-16'>Lorem ipsum dolor sit amet consectetur, <br /> adipisicing elit. Ea ratione minima tenetur <br /> consectetur, sint exercitationem assumenda <br /> maxime, tempora, amet unde iure. Voluptatibus.</p>
+                        <p className='ms-16 text-sm'>Lorem ipsum dolor sit amet consectetur, <br /> adipisicing elit. Ea ratione minima tenetur <br /> consectetur, sint exercitationem assumenda <br /> maxime, tempora, amet unde iure. Voluptatibus.</p>
                     </div>
                     {/* No 1 Ends */}
 
@@ -49,11 +49,11 @@ const VisionAndMission = () => {
                     {/* No 2 Start */}
                     <div>
                         <div className='flex items-center gap-3'>
-                            <FaSun className="w-[50px] h-[50px] rounded-full bg-cyan-400 text-white p-3" />
-                            <p className='text-xl font-semibold'>Mission</p>
+                            <FaSun className="w-[45px] h-[45px] rounded-full bg-cyan-400 text-white p-3" />
+                            <p className='text-lg font-semibold'>Mission</p>
                         </div>
 
-                        <p className='ms-16'>Lorem ipsum dolor sit amet consectetur, <br /> adipisicing elit. Ea ratione minima tenetur <br /> consectetur, sint exercitationem assumenda <br /> maxime, tempora, amet unde iure. Voluptatibus.</p>
+                        <p className='ms-16 text-sm'>Lorem ipsum dolor sit amet consectetur, <br /> adipisicing elit. Ea ratione minima tenetur <br /> consectetur, sint exercitationem assumenda <br /> maxime, tempora, amet unde iure. Voluptatibus.</p>
                     </div>
                     {/* No 2 Ends */}
 
@@ -64,7 +64,7 @@ const VisionAndMission = () => {
 
                 {/* ---------------3rd Part Ends---------------------- */}
 
-                <button className="btn btn-outline btn-primary w-[200px] my-4">Read More</button>
+                <button className="btn btn-outline btn-primary w-[150px] my-4">Read More</button>
             </div>
         </div>
     );

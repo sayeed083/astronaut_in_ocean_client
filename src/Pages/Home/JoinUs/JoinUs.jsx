@@ -3,7 +3,7 @@ import { Parallax } from "react-parallax";
 
 const JoinUs = () => {
     return (
-        <div className='my-10'>
+        <div className='mt-10'>
             <Parallax
                 bgImage="https://i.postimg.cc/YS5b4gD3/hb2.jpg"
                 bgImageAlt="Universe Background"

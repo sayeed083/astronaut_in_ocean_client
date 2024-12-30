@@ -12,11 +12,11 @@ import VisionAndMission from "../VisionAndMission/VisionAndMission";
 
 const Home = () => {
     return (
-        <div>
+        <div className="text-white font-serif">
             <HomeBanner></HomeBanner>
             <VisionAndMission></VisionAndMission>
             <CounterUp></CounterUp>
-            <DiscoverTheUniverse></DiscoverTheUniverse>
+            {/* <DiscoverTheUniverse></DiscoverTheUniverse> */}
             <FeaturedResearch></FeaturedResearch>
             <Team></Team>
             <Partner></Partner>

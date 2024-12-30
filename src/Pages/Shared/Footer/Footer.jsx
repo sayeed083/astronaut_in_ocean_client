@@ -13,18 +13,11 @@ const Footer = () => {
         <aside>
 
           <FaUserAstronaut className='text-[100px]'></FaUserAstronaut>
-          {/* <img className='w-[120px] h' src="/src/assets/astic.png" alt="" /> */}
           <div className='my-3'>
-          <Link to="/" className=" uppercase text-xl">Astral Journey</Link>
-          <p className='text-sm font-normal mt-3'>"Explore the wonders of the universe with Astral Journey! <br /> Discover detailed information about the solar system, planets, <br /> along with engaging blogs that bring the mysteries of space to life."</p>
+            <Link to="/" className=" uppercase text-xl">Astral Journey</Link>
+            <p className='text-sm font-normal mt-3'>"Explore the wonders of the universe with Astral Journey! <br /> Discover detailed information about the solar system, planets, <br /> along with engaging blogs that bring the mysteries of space to life."</p>
           </div>
-          {/* <p className='text-2xl font-semibold my-3'>
-            Astral Journey
-            <br />
-            <span className='text-sm font-normal'>
-              "Explore the wonders of the universe with Astral Journey! <br /> Discover detailed information about the solar system, planets, <br /> along with engaging blogs that bring the mysteries of space to life."
-            </span>
-          </p> */}
+
           <ul className='flex items-center gap-5 text-2xl'>
             <li><Link to="https://www.facebook.com/" target="_blank"><FaFacebook />  </Link></li>
             <li><Link to="https://www.instagram.com/" target="_blank"><FaInstagram /> </Link></li>

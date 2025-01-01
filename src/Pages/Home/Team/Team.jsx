@@ -1,24 +1,39 @@
 import React from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const Team = () => {
+
+
+    useEffect(() => {
+
+        Aos.init({ duration: 2000 });
+
+    }, []);
+
+
+
     return (
-        <div className='my-32'>
+        <div className='my-[200px]'>
             {/* Section 1 */}
             <div>
-            <div className="text-center sm:text-left">
-    <div className="flex items-center text-xl sm:text-2xl md:text-3xl capitalize gap-5 text-cyan-400 justify-center sm:justify-start">
-        <p>Team</p>
-        <hr className="border-t-[2px] border-cyan-400 w-[200px] sm:w-[250px] md:w-[350px]" />
-    </div>
+                <div className="text-center sm:text-left" data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
+                    <div className="flex items-center text-xl sm:text-2xl md:text-3xl capitalize gap-5 text-cyan-400 justify-center sm:justify-start">
+                        <p>Team</p>
+                        <hr className="border-t-[2px] border-cyan-400 w-[200px] sm:w-[250px] md:w-[350px]" />
+                    </div>
 
-    <div>
-        <h2 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl capitalize'>
-            meet our <span className='text-cyan-400'>professional</span>
-        </h2>
-        <p className='mt-2 text-3xl sm:text-4xl md:text-5xl'>Team</p>
-        <hr className="border-t-[2px] border-cyan-400 mt-4 w-[80px] sm:w-[100px] md:w-[120px] mx-auto" />
-    </div>
-</div>
+                    <div>
+                        <h2 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl capitalize'>
+                            meet our <span className='text-cyan-400'>professional</span>
+                        </h2>
+                        <p className='mt-2 text-3xl sm:text-4xl md:text-5xl'>Team</p>
+                        <hr className="border-t-[2px] border-cyan-400 mt-4 w-[80px] sm:w-[100px] md:w-[120px] mx-auto" />
+                    </div>
+                </div>
 
 
             </div>
@@ -26,7 +41,7 @@ const Team = () => {
             {/* Section 2 */}
             <div className="flex flex-wrap items-center justify-center gap-10 my-14">
                 {/* First Image */}
-                <div className="relative group">
+                <div className="relative group" data-aos="flip-left">
                     <img
                         src="https://i.postimg.cc/Y0x1B8Zr/M-2.jpg"
                         alt="Person 1"
@@ -39,7 +54,7 @@ const Team = () => {
                 </div>
 
                 {/* Second Image */}
-                <div className="relative group">
+                <div className="relative group" data-aos="flip-up">
                     <img
                         src="https://i.postimg.cc/Vv2K5K4j/F-3.jpg"
                         alt="Person 2"
@@ -52,7 +67,7 @@ const Team = () => {
                 </div>
 
                 {/* Third Image */}
-                <div className="relative group">
+                <div className="relative group" data-aos="flip-right">
                     <img
                         src="https://i.postimg.cc/Hkr76pYs/M-3.jpg"
                         alt="Person 3"
@@ -65,7 +80,7 @@ const Team = () => {
                 </div>
 
                 {/* Fourth Image */}
-                <div className="relative group">
+                <div className="relative group" data-aos="flip-down">
                     <img
                         src="https://i.postimg.cc/FFxcRWCm/M-4.jpg"
                         alt="Person 4"
@@ -79,7 +94,9 @@ const Team = () => {
             </div>
 
             {/* Section 3 */}
-            <div className="my-4 text-lg sm:text-xl md:text-2xl">
+            <div className="my-4 text-lg sm:text-xl md:text-2xl" data-aos="fade-left"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                 <p className="text-center md:text-end">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aliquam possimus
                     <br />

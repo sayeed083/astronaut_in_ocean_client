@@ -13,7 +13,8 @@ const CounterUp = () => {
 
     return (
         <ScrollTrigger onEnter={() => setStartCount(true)} onExit={() => setStartCount(false)}>
-            <div className="my-28">
+            <div className="my-[200px]" data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom">
                 <div className="flex flex-wrap justify-evenly gap-8 items-center text-white">
                     {/* Observatory Zone */}
                     <div

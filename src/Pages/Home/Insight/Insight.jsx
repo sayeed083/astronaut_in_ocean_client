@@ -1,10 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const Insight = () => {
+
+    useEffect(() => {
+
+        Aos.init({ duration: 1500 });
+
+    }, []);
+
+
     return (
         <div>
-            <div className='my-10'>
+            <div className='mt-[200px]' data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                 <div>
                     <div className="flex items-center text-xl sm:text-2xl md:text-3xl capitalize gap-5 text-cyan-400">
                         <p>Insight</p>
@@ -21,7 +34,7 @@ const Insight = () => {
             </div>
 
 
-            <div className='grid sm:grid-cols-2 grid-cols-1 gap-5'>
+            <div className='grid sm:grid-cols-2 grid-cols-1 gap-5' data-aos="fade-up">
                 <div className="card lg:card-side bg-base-100 shadow-xl">
                     <figure>
                         <img

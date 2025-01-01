@@ -1,20 +1,43 @@
 import React from 'react';
 import { FaMoon, FaSun } from 'react-icons/fa';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const VisionAndMission = () => {
+
+
+
+    useEffect(() => {
+
+        Aos.init({ duration: 1000 });
+
+    }, []);
+
+
+
+
+
+
+
+
+
+
+
+
     return (
         <div className='mt-10 mb-28 flex flex-col sm:flex-col md:flex-col lg:flex-row items-center gap-8 lg:gap-20 justify-between text-white'>
-            <div>
-                <img src="https://i.postimg.cc/htvtdnkB/Untitled-design-removebg-preview.png" alt="" />
+            <div data-aos="fade-up">
+                <img  src="https://i.postimg.cc/htvtdnkB/Untitled-design-removebg-preview.png" alt="" />
             </div>
             <div>
 
 
- 
+
 
                 <div className="px-4 md:px-8 lg:px-14 my-8">
 
-                    <div className="flex flex-col items-center md:items-start text-center md:text-left">
+                    <div className="flex flex-col items-center md:items-start text-center md:text-left" data-aos="zoom-in-down">
 
                         <div className="flex items-center text-xl capitalize gap-5 text-cyan-400">
                             <p>Who we are</p>
@@ -38,7 +61,7 @@ const VisionAndMission = () => {
 
                 {/* ---------------3rd Part Start---------------------- */}
 
-                <div className='flex flex-col sm:flex-col md:flex-col lg:flex-row items-center justify-between'>
+                <div className='flex flex-col sm:flex-col md:flex-col lg:flex-row items-center justify-between' data-aos="zoom-out-up">
 
                     {/* No 1 Start */}
                     <div>
@@ -70,7 +93,7 @@ const VisionAndMission = () => {
 
                 {/* ---------------3rd Part Ends---------------------- */}
 
-                <button className="btn btn-outline btn-primary w-[150px] ms-16 md:ms-14 lg:ms-16 my-4">Read More</button>
+                <button data-aos="zoom-out" className="btn btn-outline btn-primary w-[150px] ms-16 md:ms-14 lg:ms-16 my-4">Read More</button>
             </div>
         </div>
     );

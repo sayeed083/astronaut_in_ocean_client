@@ -1,10 +1,20 @@
 import React from 'react';
 import { ImHangouts } from "react-icons/im";
 import Marquee from "react-fast-marquee";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const Testimonial = () => {
+    useEffect(() => {
+
+        Aos.init({ duration: 2000 });
+
+    }, []);
+
+    
     return (
-        <div className='my-36'>
+        <div className='my-[200px]'>
 
 
 
@@ -23,21 +33,23 @@ const Testimonial = () => {
 
 
             </div> */}
-<div className="text-center sm:text-left">
-    <div>
-        <div className="flex items-center text-xl sm:text-2xl md:text-3xl capitalize gap-5 text-cyan-400 justify-center sm:justify-start">
-            <p>Testimonial</p>
-            <hr className="border-t-[2px] border-cyan-400 w-[200px] sm:w-[250px] md:w-[350px]" />
-        </div>
+            <div className="text-center sm:text-left" data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
+                <div>
+                    <div className="flex items-center text-xl sm:text-2xl md:text-3xl capitalize gap-5 text-cyan-400 justify-center sm:justify-start">
+                        <p>Testimonial</p>
+                        <hr className="border-t-[2px] border-cyan-400 w-[200px] sm:w-[250px] md:w-[350px]" />
+                    </div>
 
-        <div>
-            <h2 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl capitalize'>
-                What <span className='text-cyan-400'>They Say</span> About Us
-            </h2>
-            <hr className="border-t-[2px] border-cyan-400 mt-4 w-[60px] sm:w-[80px] md:w-[100px] mx-auto" />
-        </div>
-    </div>
-</div>
+                    <div>
+                        <h2 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl capitalize'>
+                            What <span className='text-cyan-400'>They Say</span> About Us
+                        </h2>
+                        <hr className="border-t-[2px] border-cyan-400 mt-4 w-[60px] sm:w-[80px] md:w-[100px] mx-auto" />
+                    </div>
+                </div>
+            </div>
 
 
 
@@ -48,7 +60,7 @@ const Testimonial = () => {
 
                 {/* ---------------------- */}
 
-                <div className='my-10 mx-32'>
+                <div className='my-10 mx-32' data-aos="zoom-in">
                     <p className='mb-8'>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br /> Commodi at eveniet ea quia consequatur error quasi</p>
                     <div className='flex items-center gap-20'>
                         <div className='flex items-center gap-4'>

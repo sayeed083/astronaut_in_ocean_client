@@ -12,7 +12,7 @@ import VisionAndMission from "../VisionAndMission/VisionAndMission";
 
 const Home = () => {
     return (
-        <div className="text-white font-serif">
+        <div className="text-white font-serif overflow-x-hidden">
             <HomeBanner></HomeBanner>
             <VisionAndMission></VisionAndMission>
             <CounterUp></CounterUp>
